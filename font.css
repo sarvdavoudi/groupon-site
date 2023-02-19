@@ -1,0 +1,34 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/GazpachoBold-107f9afd97.woff2);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/GazpachoHeavy-5bb030a241.woff2);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/Groupon-5e0a12d84d.woff2);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/OpenSansBold-2ecb7b1efc.woff2);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/OpenSansExtraBold-1666787ea3.woff2);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/OpenSansRegular-409ed3007d.woff2);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/OpenSansSemiBold-55b4120b52.woff2);
+}
