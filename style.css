@@ -4,15 +4,17 @@
 
 a {
   text-decoration: none;
-  color: inherit; /*برای اینکه رنگ لینک ها از والدشون ارث بری کند. چون رنگ والدش سفید است پس لینک ها سفید میشود*/
+  color: inherit; /*The color of links inherits from their parent. Because its parent color is white,
+    so the links will be white*/
 }
 /* ******************* */
-body,header{
+body,
+header {
   color: #2b2430;
-    font-family: OpenSans, Open Sans, system, -apple-system, BlinkMacSystemFont, Roboto, Arial, FreeSans, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
+  font-family: OpenSans, Open Sans, system, -apple-system, BlinkMacSystemFont, Roboto, Arial, FreeSans, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 /* *****************************************************8 */
 
@@ -20,10 +22,9 @@ body,header{
   background-color: black;
   color: white;
 }
-.navbar-container{
-  margin-right:90px;
+.navbar-container {
+  margin-right: 90px;
   margin-left: 90px;
-
 }
 
 .nav-sub-1 ul {
@@ -49,7 +50,6 @@ body,header{
 
 .nav-sub-2-left-div {
   display: flex;
-
 }
 
 .nav-sub-2-right-div {
@@ -57,28 +57,28 @@ body,header{
   justify-content: end;
 }
 
-.btn-primary{
-      background-color: black;
-        color: white;
-        border: 2px solid;
-        border-color: white;
-        margin-left: 20px;
-        padding: 9px;
-        width: 133px;
-        border-radius: 10px;
+.btn-primary {
+  background-color: black;
+  color: white;
+  border: 2px solid;
+  border-color: white;
+  margin-left: 20px;
+  padding: 9px;
+  width: 133px;
+  border-radius: 10px;
 }
 
 .nav-sub-3 {
   display: flex;
-  flex-direction: column; /*محور ایکس و ایگرگ برعکس شد*/
-  align-items: center; /*چون فلکس ستونی شده ، محور ایکس ایگرگ برعکس شده پس از این ویژگی برای وسط چین شدن محور ایکس استفاده میکنیم */
+  flex-direction: column; /*X and Y axis were reversed*/
+  align-items: center; /*Because the flex is columnar,the X and Y axis is completely reversed,so we use this feature to place the X-axis in center */
 }
 
-.nav-sub-3-title{
+.nav-sub-3-title {
   font-weight: 800;
-    font-size: 30px;
-        margin-bottom: 9px;
-          margin-top: 2px;
+  font-size: 30px;
+  margin-bottom: 9px;
+  margin-top: 2px;
 }
 
 .nav-sub-3 #search-box {
@@ -86,7 +86,6 @@ body,header{
   padding: 12px;
   border-radius: 12px;
   margin-bottom: 20px;
-
 }
 
 #search-box::placeholder {
@@ -94,7 +93,7 @@ body,header{
 }
 
 /* ************************************** */
-.green-bar{
+.green-bar {
   display: flex;
   justify-content: center;
   background-color: rgb(232, 252, 234);
@@ -102,7 +101,7 @@ body,header{
   padding: 16px;
 }
 
-.green-bar-message{
+.green-bar-message {
   font-weight: 700;
   color: rgb(0, 110, 46);
   width: 330px;
@@ -113,32 +112,41 @@ body,header{
   margin-right: 24px;
 }
 
-.green-bar-vertical-line{
+.green-bar-vertical-line {
   height: 27px;
-    background-color: rgb(143, 142, 145);
-    width: 1px;
-    max-width: auto;
+  background-color: rgb(143, 142, 145);
+  width: 1px;
+  max-width: auto;
 }
 /* ***************************************** */
 
 .container {
-  /* این دو خط کد همه ی محتوا را وسط چین میکند */
+  /* These two lines of code center all the content */
   margin: 0 auto;
-  width: 80%;
-  
+  width: 100%;
 }
 
+.container-h2{
+      color: #333;
+        font-size: 1.6rem;
+        line-height: 1.2;
+            margin: 25px 0px;
+}
 
 .section-1 {
   display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr)); /*برای اینکه تعداد ستون را عددی ندهیم اینطوری مینویسیم*/
-    grid-gap: 150px;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /*we write like this in order to not give the number to gride-columns. this code detect number of columns automaticly*/
+  grid-gap: 200px;
+  justify-items: center;
+  align-items: center;
 }
 
-.section-1-card-img{
- width: 400px;
+.section-1-card-img {
+  width: 400px;
   border-radius: 10px;
-  
 }
 
 .card-title {
@@ -148,21 +156,21 @@ body,header{
   width: 400px;
 }
 
-.card-desc-prices-old{
+.card-desc-prices-old {
   font-size: 21px;
   font-weight: 400;
   text-decoration: line-through;
   margin-right: 3px;
-  color: #615c66
+  color: #615c66;
 }
 
-.card-desc-prices-new{
-  color:  rgb(3, 129, 87);
+.card-desc-prices-new {
+  color: rgb(3, 129, 87);
   font-weight: 600;
   font-size: 21px;
 }
 
-.card-desc-prices-off-prcentage{
+.card-desc-prices-off-prcentage {
   background-color: #eafcde;
   border: none;
   color: green;
@@ -176,58 +184,52 @@ body,header{
 
 .section-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
-  grid-gap: 400px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 300px;
   margin: 60px 0px;
-
 }
 
 .section-2-card {
-
   width: 550px;
   height: 250px;
   cursor: pointer;
-
- 
 }
 
 /* ****************** */
-.section-3{
+.section-3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 100px;
 }
 
-.section-3-card-img{
+.section-3-card-img {
   width: 300px;
   border-radius: 10px;
 }
 
-.section-3 .card-title{
+.section-3 .card-title {
   width: 300px;
 }
 
-.section-3 .card-desc-summery{
+.section-3 .card-desc-summery {
   width: 300px;
 }
 
 /* ************* */
-.footer-gray-bar{
+.footer-gray-bar {
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  background-color:rgb(248, 247, 250);;
+  background-color: rgb(248, 247, 250);
   padding-top: 24px;
   padding-bottom: 24px;
   margin-top: 30px;
   cursor: pointer;
-    
 }
 
-.footer-gray-bar-title{
+.footer-gray-bar-title {
   font-size: 18px;
   font-weight: 800;
-
 }
 
 .footer-container {
@@ -235,7 +237,7 @@ body,header{
   background-color: black;
   color: white;
   display: grid;
-  grid-template-columns: 310px 500px 1fr 1fr; /*برای اینکه اندازه ستونها متفاوت است پیکسل دادیم*/
+  grid-template-columns: 310px 500px 1fr 1fr; /*Because the size of the columns is different, we gave pixels*/
 }
 
 .footer-container ul {
