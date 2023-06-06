@@ -23,8 +23,13 @@ header {
   color: white;
 }
 .navbar-container {
-  margin-right: 90px;
-  margin-left: 90px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+.nav-sub-1{
+  width: 100%;
 }
 
 .nav-sub-1 ul {
@@ -46,6 +51,7 @@ header {
 .nav-sub-2 {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .nav-sub-2-left-div {
@@ -69,9 +75,11 @@ header {
 }
 
 .nav-sub-3 {
+  
   display: flex;
   flex-direction: column; /*X and Y axis were reversed*/
   align-items: center; /*Because the flex is columnar,the X and Y axis is completely reversed,so we use this feature to place the X-axis in center */
+  width: 100%;
 }
 
 .nav-sub-3-title {
@@ -123,6 +131,7 @@ header {
 .container {
   /* code center all the content */
   margin: 0 auto;
+  max-width: 1600px;
 }
 
 .container-h2 {
@@ -133,18 +142,23 @@ header {
 }
 
 .section-1 {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(200px, 1fr)
-  ); /*we write like this in order to not give the number to gride-columns. this code detect number of columns automaticly*/
-  grid-gap: 190px;
-  justify-items: center;
-  margin: 20px 160px 10px 160px;
+  /*we write like this in order to not give the number to gride-columns. this code detect number of columns automaticly*/
+    display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-gap: 10px;
+      justify-items: center;
+      margin: 0 auto;
+        padding: 0 70px;
+      
+    
+}
+
+.section-1-card{
+  width: 100%;
 }
 
 .section-1-card-img {
-  width: 430px;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -152,7 +166,7 @@ header {
   font-weight: 700;
   line-height: 24px;
   font-size: 16px;
-  width: 400px;
+  width: 100%;
 }
 
 .card-desc-prices-old {
@@ -183,14 +197,15 @@ header {
 
 .section-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 300px;
-  justify-items: center;
-  margin: 40px 200px 10px 200px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 100px;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0 70px;
 }
 
 .section-2-card {
-  width: 650px;
+  width: 100%;
   height: 280px;
   cursor: pointer;
   border-radius: 10px;
@@ -199,10 +214,15 @@ header {
 /* ****************** */
 .section-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
   justify-items: center;
-  margin: 40px 100px 10px 100px;
+  margin: 0 auto;
+    padding: 0 70px;
+}
+
+.section-3-card{
+  width: 100%;
 }
 
 .section-3-card-img {
@@ -240,7 +260,8 @@ header {
   background-color: black;
   color: white;
   display: grid;
-  grid-template-columns: 310px 500px 1fr 1fr; /*Because the size of the columns is different, we gave pixels*/
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding-top: 50px;
 }
 
 .footer-container ul {
